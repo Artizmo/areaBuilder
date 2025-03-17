@@ -1,0 +1,39 @@
+[x] change components
+[] click on a tile to create a room object
+[] TileEditor component
+  [] add id
+  [] select direction from dropdown
+  [] input connecting room id 
+  [] save click saves room to map object
+  [] clear click deletes room from map object
+[] save to some kind of state
+[] tile
+{ 
+  id,
+  x,
+  y,
+  room: Room
+  connection: Connector
+}
+[x] room
+{
+  id,
+  n,
+  e,
+  s,
+  w,
+  u,
+  d
+}
+[x] connector
+{
+  id,
+  isVertical,
+  source: tile,
+  destination: tile,
+}
+
+Map
+  Tile
+    Room
+    Connector
